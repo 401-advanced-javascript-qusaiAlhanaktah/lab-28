@@ -4,7 +4,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-qusaiAlhanaktah/lab-28/tree/lab28)
+- [submission PR](https://github.com/401-advanced-javascript-qusaiAlhanaktah/lab-28/pull/1)
 - [ci/cd](https://github.com/401-advanced-javascript-qusaiAlhanaktah/lab-28/actions) (GitHub Actions)
 
 ### Setup
