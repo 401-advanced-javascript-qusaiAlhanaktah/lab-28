@@ -1,5 +1,5 @@
 {
-  "name": "lab-27",
+  "name": "lab-28",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/401-advanced-javascript-qusaiAlhanaktah/lab-27.git"
+    "url": "git+https://github.com/401-advanced-javascript-qusaiAlhanaktah/lab-28.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/401-advanced-javascript-qusaiAlhanaktah/lab-27/issues"
+    "url": "https://github.com/401-advanced-javascript-qusaiAlhanaktah/lab-28/issues"
   },
   "homepage": "/",
   "dependencies": {
@@ -31,11 +31,11 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-json-view": "^1.19.1",
     "react-jsonschema-form": "^1.8.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
-    "react-test-renderer": "^16.12.0",
-    "superagent": "^5.2.2"
+    "react-test-renderer": "^16.12.0"
   },
   "browserslist": {
     "production": [

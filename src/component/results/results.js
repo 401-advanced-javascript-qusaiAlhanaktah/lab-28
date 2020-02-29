@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import ReactJson from 'react-json-view';
 
 function Results (props){
   if (props.response.Headers) {
     return (
       <section>
-        {JSON.stringify(props.response ,null , '\t')}
+        <ReactJson src= {props.response} />
       </section>
     );
   }else return <section></section>;
