@@ -1,40 +1,48 @@
+/* eslint-disable no-undef */
+// import './resty.scss';
+
 import React from 'react';
-import superagent from 'superagent';
-class RESTy extends React.Component{
-  constructor (props){
+
+class Form extends React.Component{
+  constructor(props){
     super(props);
     this.state = {
-      url: '',
-      method: 'get',
-      header: {},
-      body: {},
-      history: {},
-      headersVisible: false,
+      url:'',
     };
-
   }
-handelChange = e =>{
-  let prop = e.target.name;
-  let value = e.target.value;
-  this.setState({[prop]: value});
-};
-// look in the send command
-callingAPI = e =>{
-  e.preventDefault();
-  superagent('get', this.state.url)
-    .set('Content-Type', 'application/json')
-    .send(this.state.requestBody)
-    .then(response=>{
-      let header = response.header;
-      let body = response.body;
-      this.setState({header, body});
-    }).catch(e =>{
-      let body = {error: e.message};
-      let header = {};
-      this.setState({header, body});
-    });
-};
 
+   handelClick = async e =>{
+     e.preventDefault();
+     let raw = await fetch(this.state.url);
+     let APIdata = await raw.json();
+     this.props.update(APIdata);
+   };
+
+   callingAPI = e =>{
+     let url = e.target.value;
+     this.setState({url});
+   };
+   render(){
+     return(
+       <form onSubmit={this.handelClick}>
+         <input type='text' className="useInput" name='url' placeholder='Type the URL  for the API' onChange={this.callingAPI} /><br/>
+         <label>GET
+           <input type='radio' name='GET'  required/>
+         </label>
+         <label>POST
+           <input type='radio' name='POST' />
+         </label>
+         <label> PUT
+           <input type='radio' name='PUT' />
+         </label>
+         <label>DELETE
+           <input type='radio' name='DELETE' />
+         </label>
+         <button type='submit'>Go!</button>
+       </form>
+     );
+   }
 }
 
-export default RESTy;
+
+export default Form;
