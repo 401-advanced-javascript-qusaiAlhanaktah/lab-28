@@ -1,9 +1,38 @@
 body{
-    background-color: aqua;
+    background-color: grey;
     h1{
-        color: blueviolet;
+        color: white;
+        background-color: blueviolet;
+        height: 40px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    form{
+        padding: 20px;
+        margin-bottom: 50px;
+        input{
+            padding: 10px;
+        }
+        .useInput{
+            margin-bottom: 20px;
+            width: 1250px;
+            height: 5px;
+        }
+        label{
+            padding: 10px;
+        }
+        button{
+            margin-left: 10px;
+            height: 25px;
+            width: 50px;
+        }
+        border: honeydew solid 2px;
+    }
+    section{
+        background-color: white;
     }
     p{
-        color: coral;
+        text-align: center;
+        color: blueviolet;
     }
 }

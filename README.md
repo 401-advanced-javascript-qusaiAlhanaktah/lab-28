@@ -28,4 +28,4 @@ npm i react enzyme gh-pages node-sass
 
 #### UML
 Link to an image of the UML for your application and response to events
-![White-Board](assets/IMG_20200225_120237.jpg)
+![White-Board](assets/IMG_20200229_130329.jpg)
